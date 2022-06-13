@@ -7,15 +7,12 @@ import {
   Dimensions,
   StyleSheet,
 } from 'react-native';
-import CardComponent from '../components/CardComponent';
 
 const Buttonscreen = () => {
   return (
     <SafeAreaView>
       <ScrollView style={style.ButtonContainer}>
-        <View>
-          <CardComponent title="Button Card" />
-        </View>
+        <View></View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -26,8 +23,6 @@ const height = Dimensions.get('window').height;
 
 const style = StyleSheet.create({
   ButtonContainer: {
-    height: height,
-    width: width,
     // backgroundColor: 'grey',
   },
 });
