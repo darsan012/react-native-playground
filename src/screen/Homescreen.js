@@ -8,7 +8,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import CardComponent from '../components/CardComponent';
-import {Headers} from '../constants/HomePageData/homeData';
+import {Headers} from '../constants/HomePageData/Data';
 
 const Homescreen = ({navigation}) => {
   const clickHandler = screenName => {

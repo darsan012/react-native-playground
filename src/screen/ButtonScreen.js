@@ -8,18 +8,33 @@ import {
   StyleSheet,
 } from 'react-native';
 
-const Buttonscreen = ({navigation}) => {
+import Screencard from '../components/ScreenCard';
+
+const Buttonscreen = () => {
   return (
     <SafeAreaView>
       <ScrollView style={style.Container}>
         <View style={style.HeaderContainer}>
           <Text style={style.HeaderText}>BUTTON COMPONENTS</Text>
         </View>
-        <FlatList
+        <View style={style.CardLayout}>
+          <Screencard
+            item={{
+              title: 'Button',
+              description: 'The quick brown fox jumps over the lazy dogs.',
+            }}
+          />
+          <Screencard
+            item={{
+              title: 'Button',
+              description: 'The quick brown fox jumps over the lazy dogs.',
+            }}
+          />
+          {/* <FlatList
           data={buttonTypes}
           renderItem={({item}) => <CardComponent item={item} />}
-        />
-        <View style={style.CardLayout}></View>
+        /> */}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
