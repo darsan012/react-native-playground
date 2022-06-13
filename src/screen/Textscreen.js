@@ -1,14 +1,7 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  ScrollView,
-  Button,
-  Alert,
-} from 'react-native';
+import {View, Text, SafeAreaView, ScrollView} from 'react-native';
 
-const Textscreen = ({navigation, route}) => {
+const Textscreen = () => {
   return (
     <SafeAreaView>
       <ScrollView>

@@ -1,4 +1,4 @@
-import Buttonscreen from '../screen/ButtonScreen';
+import Buttonscreen from '../screen/Buttonscreen';
 import Textscreen from '../screen/Textscreen';
 
 const screens = [
