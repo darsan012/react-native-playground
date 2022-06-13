@@ -8,35 +8,9 @@ import {
   StyleSheet,
 } from 'react-native';
 import CardComponent from '../components/CardComponent';
+import {Headers} from '../constants/HomePageData/homeData';
 
 const Homescreen = ({navigation}) => {
-  const Headers = [
-    {
-      screenName: 'Button',
-      title: 'Button Card',
-      iconsName: 'hand-point-up',
-    },
-    {
-      screenName: 'Text',
-      title: 'Alert',
-      iconsName: 'eye',
-    },
-    {
-      screenName: 'Text',
-      title: 'Box',
-      iconsName: 'box',
-    },
-    {
-      screenName: 'Text',
-      title: 'Text Card',
-      iconsName: 'envelope-open-text',
-    },
-    {
-      screenName: 'Text',
-      title: 'Action Sheet',
-      iconsName: 'angle-double-right',
-    },
-  ];
   const clickHandler = screenName => {
     navigation.navigate(screenName);
   };
