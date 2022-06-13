@@ -33,7 +33,6 @@ const Homescreen = ({navigation}) => {
     },
   ];
   const clickHandler = screenName => {
-    console.log(screenName);
     navigation.navigate(screenName);
   };
   return (
@@ -67,10 +66,9 @@ const height = Dimensions.get('window').height;
 
 const style = StyleSheet.create({
   HomeContainer: {
-    display: 'flex',
     height: height,
     width: width,
-    // backgroundColor: 'rgb(188,227,227)',
+    backgroundColor: 'rgb(188,227,227)',
     padding: 8,
   },
   HeaderContainer: {alignItems: 'center', padding: 10},
@@ -81,8 +79,9 @@ const style = StyleSheet.create({
   },
   CardLayout: {
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center',
-    // flexDirection: 'row',
     flexWrap: 'wrap',
   },
 });

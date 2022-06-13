@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const CardComponent = ({item, clickHandler}) => {
@@ -14,18 +14,17 @@ const CardComponent = ({item, clickHandler}) => {
 
 const style = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     height: 120,
     width: 150,
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: 5,
     margin: 5,
     borderRadius: 10,
     backgroundColor: 'darkslateblue',
-    elevation: 3,
-    shadowColor: '#333',
     shadowOffset: {width: 1, height: 1},
+    elevation: 3,
+    shadowColor: '#fff',
     shadowRadius: 2,
   },
   titleText: {
