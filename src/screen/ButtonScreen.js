@@ -12,7 +12,9 @@ const Buttonscreen = () => {
   return (
     <SafeAreaView>
       <ScrollView style={style.ButtonContainer}>
-        <View></View>
+        <View>
+          <Text>This is button screen</Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

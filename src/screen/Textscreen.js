@@ -6,7 +6,7 @@ const Textscreen = () => {
     <SafeAreaView>
       <ScrollView>
         <View>
-          <Text>Welcome</Text>
+          <Text>Welcome to the text screen</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
