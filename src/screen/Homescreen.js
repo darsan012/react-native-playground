@@ -14,22 +14,27 @@ const Homescreen = ({navigation}) => {
     {
       screenName: 'Button',
       title: 'Button Card',
+      iconsName: 'hand-point-up',
     },
     {
       screenName: 'Text',
       title: 'Alert',
+      iconsName: 'eye',
     },
     {
       screenName: 'Text',
       title: 'Box',
+      iconsName: 'box',
     },
     {
       screenName: 'Text',
       title: 'Text Card',
+      iconsName: 'envelope-open-text',
     },
     {
       screenName: 'Text',
       title: 'Action Sheet',
+      iconsName: 'angle-double-right',
     },
   ];
   const clickHandler = screenName => {
@@ -53,6 +58,7 @@ const Homescreen = ({navigation}) => {
               clickHandler={() => {
                 clickHandler(title.screenName);
               }}
+              iconsName={title.iconsName}
             />
           ))}
         </View>
@@ -71,7 +77,7 @@ const style = StyleSheet.create({
     backgroundColor: 'rgb(188,227,227)',
     padding: 8,
   },
-  HeaderContainer: {alignItems: 'center', padding: 10},
+  HeaderContainer: {alignItems: 'center', paddingTop: 50, paddingBottom: 60},
   HeaderText: {
     fontSize: 16,
     color: 'black',

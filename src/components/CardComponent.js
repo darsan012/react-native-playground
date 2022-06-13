@@ -3,10 +3,10 @@ import React from 'react';
 import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-const CardComponent = ({item, clickHandler}) => {
+const CardComponent = ({item, clickHandler, iconsName}) => {
   return (
     <TouchableOpacity style={style.container} onPress={clickHandler}>
-      <Icon name="home" size={20} color="white" />
+      <Icon name={iconsName} size={20} color="white" />
       <Text style={style.titleText}>{item.title}</Text>
     </TouchableOpacity>
   );
