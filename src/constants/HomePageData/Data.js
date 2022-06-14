@@ -6,8 +6,8 @@ export const Headers = [
   },
   {
     screenName: 'Button',
-    title: 'Button Card',
-    iconsName: 'hand-point-up',
+    title: 'Button',
+    iconsName: 'square-full',
   },
   {
     screenName: 'Text',

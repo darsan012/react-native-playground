@@ -49,11 +49,11 @@ const style = StyleSheet.create({
     height: height,
     width: width,
     backgroundColor: 'rgb(188,227,227)',
-    padding: 5,
+    padding: 2,
   },
   HeaderContainer: {alignItems: 'center', paddingTop: 15, paddingBottom: 10},
   HeaderText: {
-    fontSize: 16,
+    fontSize: 18,
     color: 'black',
     fontWeight: '500',
   },
