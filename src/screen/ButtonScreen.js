@@ -10,6 +10,7 @@ const Buttonscreen = ({route}) => {
           This is the simple default button.
         </Text>
         <Button
+          touchSoundDisabled={false}
           title={'Press me'}
           onPress={() => {
             Alert.alert('Button pressed');
