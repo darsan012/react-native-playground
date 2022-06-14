@@ -47,7 +47,7 @@ export const Headers = [
   },
   {
     screenName: 'TextArea',
-    title: 'Textarea',
+    title: 'Input',
     iconsName: 'envelope-open-text',
   },
 ];
