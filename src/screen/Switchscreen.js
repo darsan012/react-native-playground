@@ -1,82 +1,55 @@
 import React, {useState} from 'react';
-import {Alert, Modal, StyleSheet, Text, Pressable, View} from 'react-native';
+import {View, Text, StyleSheet, Switch, Pressable} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import Layout from '../components/Layout';
+
 const Switchscreen = ({route}) => {
-  const [modalVisible, setModalVisible] = useState(false);
+  const [isEnabled, setIsEnabled] = useState(false);
+  const [buttonState, setButtonState] = useState(false);
+  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+  const toggleButton = () => setButtonState(initailState => !initailState);
   return (
     <Layout screenHeader={route.params.screenName}>
-      <View style={styles.centeredView}>
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={modalVisible}
-          onRequestClose={() => {
-            Alert.alert('Modal has been closed.');
-            setModalVisible(!modalVisible);
-          }}>
-          <View style={styles.centeredView}>
-            <View style={styles.modalView}>
-              <Text style={styles.modalText}>Hello World!</Text>
-              <Pressable
-                style={[styles.button, styles.buttonClose]}
-                onPress={() => setModalVisible(!modalVisible)}>
-                <Text style={styles.textStyle}>Hide Modal</Text>
-              </Pressable>
-            </View>
+      <View style={style.container}>
+        <View style={style.switchContainer}>
+          <Text style={{padding: 10}}>
+            This is react native switch component
+          </Text>
+          <Switch
+            trackColor={{false: '#767577', true: '#81b0ff'}}
+            thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+            ios_backgroundColor="#3e3e3e"
+            onValueChange={toggleSwitch}
+            value={isEnabled}
+          />
+        </View>
+        <Pressable onPress={toggleButton}>
+          <View style={style.switchContainer}>
+            <Text style={{padding: 10}}>This is custom switch component</Text>
+            {buttonState && <Icon name="toggle-off" size={30} />}
+            {!buttonState && <Icon name="toggle-on" size={30} />}
           </View>
-        </Modal>
-        <Pressable
-          style={[styles.button, styles.buttonOpen]}
-          onPress={() => setModalVisible(true)}>
-          <Text style={styles.textStyle}>Show Modal</Text>
         </Pressable>
       </View>
     </Layout>
   );
 };
-const styles = StyleSheet.create({
-  centeredView: {
+
+const style = StyleSheet.create({
+  container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 22,
   },
-  modalView: {
-    margin: 20,
-    backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 35,
+  switchContainer: {
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  button: {
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2,
-  },
-  buttonOpen: {
-    backgroundColor: '#F194FF',
-  },
-  buttonClose: {
-    backgroundColor: '#2196F3',
-  },
-  textStyle: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  modalText: {
-    marginBottom: 15,
-    textAlign: 'center',
+    width: 320,
+    justifyContent: 'space-between',
+    backgroundColor: 'rgb(243,243,243)',
+    borderWidth: 1,
+    borderColor: '#eee',
+    padding: 15,
+    margin: 8,
   },
 });
-
 export default Switchscreen;

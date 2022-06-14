@@ -38,9 +38,9 @@ const Modalscreen = ({route}) => {
 const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    marginTop: 22,
+    marginTop: 100,
   },
   modalView: {
     margin: 20,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   button: {
-    borderRadius: 20,
+    borderRadius: 10,
     padding: 10,
     elevation: 2,
   },
