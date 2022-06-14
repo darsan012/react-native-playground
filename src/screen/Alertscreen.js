@@ -4,24 +4,6 @@ import {View, Text, Dimensions, StyleSheet, Alert, Button} from 'react-native';
 import Layout from '../components/Layout';
 const simpleAlert = () => {
   Alert.alert('Hello I am simple alert');
-  // Alert.alert(
-  //   'Alert Title',
-  //   'My Alert Msg',
-  //   [
-  //     {
-  //       text: 'Cancel',
-  //       onPress: () => Alert.alert('Cancel Pressed'),
-  //       style: 'cancel',
-  //     },
-  //   ],
-  //   {
-  //     cancelable: true,
-  //     onDismiss: () =>
-  //       Alert.alert(
-  //         'This alert was dismissed by tapping outside of the alert dialog.',
-  //       ),
-  //   },
-  // );
 };
 const alertTitle = () => {
   Alert.alert('Alert Title', 'My Alert message');

@@ -1,18 +1,67 @@
 import React from 'react';
-import {View, Text, Dimensions, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
+import zyan from '../assets/zyan.jpeg';
 
 import Layout from '../components/Layout';
 const Avatarscreen = ({route}) => {
   return (
     <Layout screenHeader={route.params.screenName}>
-      <View>
-        <Text>Hello</Text>
+      <View style={style.container}>
+        <View style={style.imageContainer}>
+          <Image source={zyan} style={style.avatar} />
+        </View>
+        <View style={style.imageContainer}>
+          <Image source={zyan} style={style.borderAvatar} />
+        </View>
+        <View style={style.imageContainer}>
+          <View style={style.textAvatarContainer}>
+            <Text style={style.textAvatar}>Z</Text>
+          </View>
+        </View>
       </View>
     </Layout>
   );
 };
 
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    padding: 15,
+    margin: 8,
+  },
+  imageContainer: {
+    backgroundColor: 'rgb(243,243,243)',
+    width: 'auto',
+    borderWidth: 1,
+    borderColor: '#eee',
+    padding: 15,
+    margin: 8,
+  },
+  avatar: {
+    height: 100,
+    width: 100,
+    borderRadius: 100 / 2,
+  },
+  borderAvatar: {
+    height: 100,
+    width: 100,
+    borderRadius: 100 / 2,
+    borderWidth: 1,
+    borderColor: 'red',
+  },
+  textAvatarContainer: {
+    backgroundColor: 'grey',
+    height: 100,
+    width: 100,
+    borderRadius: 100 / 2,
+    justifyContent: 'center',
+  },
+  textAvatar: {
+    textAlign: 'center',
+    fontSize: 50,
+    color: 'purple',
+  },
+});
 
 export default Avatarscreen;
