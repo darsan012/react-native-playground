@@ -7,7 +7,7 @@ import Dividerscreen from '../screen/Dividerscreen';
 import Flatscreen from '../screen/FlatListscreen';
 import Imagescreen from '../screen/Imagescreen';
 import Switchscreen from '../screen/Switchscreen';
-import TextAreascreen from '../screen/TextAreascreen';
+import Inputscreen from '../screen/Inputscreen';
 import Toastscreen from '../screen/Toastscreen';
 
 const screens = [
@@ -52,8 +52,8 @@ const screens = [
     showHeader: false,
   },
   {
-    name: 'TextArea',
-    component: TextAreascreen,
+    name: 'Input',
+    component: Inputscreen,
     showHeader: false,
   },
   {

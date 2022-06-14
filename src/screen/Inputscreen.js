@@ -2,24 +2,11 @@ import React from 'react';
 import {View, Text, Dimensions, StyleSheet, Button, Alert} from 'react-native';
 
 import Layout from '../components/Layout';
-const Textscreen = ({route}) => {
+const Inputscreen = ({route}) => {
   return (
     <Layout screenHeader={route.params.screenName}>
       <View style={style.componentContainer}>
         <Text style={{}}>This is default text.</Text>
-      </View>
-      <View style={style.componentContainer}>
-        <Text style={{fontSize: 18, fontStyle: 'italic'}}>
-          This is italic text.
-        </Text>
-      </View>
-      <View style={style.componentContainer}>
-        <Text style={{fontSize: 18, fontWeight: '600'}}>
-          This is bold text.
-        </Text>
-      </View>
-      <View style={style.componentContainer}>
-        <Text style={{fontSize: 20, color: 'red'}}>This is red text.</Text>
       </View>
     </Layout>
   );
@@ -37,4 +24,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default Textscreen;
+export default Inputscreen;

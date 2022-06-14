@@ -46,7 +46,7 @@ export const Headers = [
     iconsName: 'divide',
   },
   {
-    screenName: 'TextArea',
+    screenName: 'Input',
     title: 'Input',
     iconsName: 'envelope-open-text',
   },
