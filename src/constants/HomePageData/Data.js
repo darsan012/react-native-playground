@@ -33,7 +33,7 @@ export const Headers = [
   {
     screenName: 'Toast',
     title: 'Toast',
-    iconsName: 'photo-video',
+    iconsName: 'cookie',
   },
   {
     screenName: 'Switch',
@@ -43,7 +43,7 @@ export const Headers = [
   {
     screenName: 'Modal',
     title: 'Modal',
-    iconsName: 'divide',
+    iconsName: 'pager',
   },
   {
     screenName: 'Input',

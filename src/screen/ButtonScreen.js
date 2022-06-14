@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Button, Alert} from 'react-native';
 import Layout from '../components/Layout';
 const Buttonscreen = ({route}) => {
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.componentContainer}>
         <Text style={{fontSize: 14, fontWeight: 'bold'}}>
           This is the simple default button.

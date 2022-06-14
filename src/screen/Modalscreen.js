@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 const Modalscreen = ({route}) => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={styles.centeredView}>
         <Modal
           animationType="slide"

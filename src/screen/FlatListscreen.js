@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Dimensions, StyleSheet, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 import ListItem from '../components/Listitem';
 
 import Layout from '../components/Layout';
@@ -11,7 +11,7 @@ const Flatscreen = ({route}) => {
     {text: 'Coke'},
   ];
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View>
         <FlatList
           data={items}
@@ -21,8 +21,5 @@ const Flatscreen = ({route}) => {
     </Layout>
   );
 };
-
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
 
 export default Flatscreen;

@@ -36,7 +36,7 @@ const cancelTouchAlert = () => {
 };
 const Alertscreen = ({route}) => {
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.componentContainer}>
         <Text style={{fontSize: 14, fontWeight: 'bold'}}>
           This is the simple alert.

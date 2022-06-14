@@ -4,7 +4,7 @@ import {View, Text, Dimensions, StyleSheet, Button, Alert} from 'react-native';
 import Layout from '../components/Layout';
 const Textscreen = ({route}) => {
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.componentContainer}>
         <Text style={{}}>This is default text.</Text>
       </View>

@@ -12,7 +12,7 @@ const Toastscreen = ({route}) => {
   };
 
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.container}>
         <Button title="Click to Toast" onPress={() => showToast()} />
       </View>

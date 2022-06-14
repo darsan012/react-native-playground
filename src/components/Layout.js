@@ -7,13 +7,20 @@ import {
   Dimensions,
   StyleSheet,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
-const Layout = ({screenHeader, children}) => {
+const Layout = ({header, children}) => {
   return (
     <SafeAreaView>
       <View style={style.LayoutContainer}>
         <View style={style.HeaderContainer}>
-          <Text style={style.HeaderText}>{screenHeader}</Text>
+          <Icon
+            name={header.iconsName}
+            color="white"
+            size={20}
+            style={{paddingBottom: 5}}
+          />
+          <Text style={style.HeaderText}>{header.screenName}</Text>
         </View>
         {children}
       </View>
@@ -29,13 +36,25 @@ const style = StyleSheet.create({
     height: height,
     width: width,
     backgroundColor: '#F8F9F9',
-    padding: 2,
+    elevation: 2,
   },
-  HeaderContainer: {alignItems: 'center', paddingTop: 15, paddingBottom: 10},
+  HeaderContainer: {
+    display: 'flex',
+    // flexDirection: 'row-reverse',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    paddingTop: 15,
+    paddingBottom: 10,
+    backgroundColor: '#2e8bd1',
+    marginBottom: 5,
+  },
   HeaderText: {
     fontSize: 18,
-    color: '#000',
+    color: '#fff',
     fontWeight: '500',
+    borderTopWidth: 2,
+    borderColor: '#fff',
+    paddingTop: 5,
   },
 });
 

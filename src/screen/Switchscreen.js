@@ -10,7 +10,7 @@ const Switchscreen = ({route}) => {
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   const toggleButton = () => setButtonState(initailState => !initailState);
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.container}>
         <View style={style.switchContainer}>
           <Text style={{padding: 10}}>
@@ -44,7 +44,7 @@ const style = StyleSheet.create({
   switchContainer: {
     alignItems: 'center',
     width: 320,
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     backgroundColor: 'rgb(243,243,243)',
     borderWidth: 1,
     borderColor: '#eee',

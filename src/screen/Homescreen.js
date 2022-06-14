@@ -12,7 +12,10 @@ import {Headers} from '../constants/HomePageData/Data';
 
 const Homescreen = ({navigation}) => {
   const clickHandler = header => {
-    navigation.navigate(header.screenName, {screenName: header.title});
+    navigation.navigate(header.screenName, {
+      screenName: header.title,
+      iconsName: header.iconsName,
+    });
   };
   return (
     <SafeAreaView>
@@ -20,10 +23,6 @@ const Homescreen = ({navigation}) => {
         <View style={style.HeaderContainer}>
           <Text style={style.HeaderText}>REACT NATIVE COMPONENTS</Text>
         </View>
-        {/* <FlatList
-        data={headers}
-        renderItem={({item}) => <CardComponent item={item} />}
-      /> */}
         <View style={style.CardLayout}>
           {Headers.sort((a, b) => a.title > b.title).map((title, index) => (
             <CardComponent

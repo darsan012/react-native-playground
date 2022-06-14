@@ -5,7 +5,7 @@ import zyan from '../assets/zyan.jpeg';
 import Layout from '../components/Layout';
 const Avatarscreen = ({route}) => {
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.container}>
         <View style={style.imageContainer}>
           <Image source={zyan} style={style.avatar} />

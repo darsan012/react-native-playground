@@ -4,7 +4,7 @@ import {View, Text, Dimensions, StyleSheet, TextInput} from 'react-native';
 import Layout from '../components/Layout';
 const Inputscreen = ({route}) => {
   return (
-    <Layout screenHeader={route.params.screenName}>
+    <Layout header={route.params}>
       <View style={style.componentContainer}>
         <TextInput placeholder="Normal text field" style={style.input} />
       </View>
