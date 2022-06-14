@@ -11,8 +11,8 @@ import CardComponent from '../components/CardComponent';
 import {Headers} from '../constants/HomePageData/Data';
 
 const Homescreen = ({navigation}) => {
-  const clickHandler = screenName => {
-    navigation.navigate(screenName);
+  const clickHandler = header => {
+    navigation.navigate(header.screenName, {screenName: header.title});
   };
   return (
     <SafeAreaView>
@@ -25,12 +25,12 @@ const Homescreen = ({navigation}) => {
         renderItem={({item}) => <CardComponent item={item} />}
       /> */}
         <View style={style.CardLayout}>
-          {Headers.map((title, index) => (
+          {Headers.sort((a, b) => a.title > b.title).map((title, index) => (
             <CardComponent
               key={index}
               item={title}
               clickHandler={() => {
-                clickHandler(title.screenName);
+                clickHandler(title);
               }}
               iconsName={title.iconsName}
             />
@@ -48,13 +48,13 @@ const style = StyleSheet.create({
   HomeContainer: {
     height: height,
     width: width,
-    backgroundColor: 'rgb(188,227,227)',
+    backgroundColor: '#F8F9F9',
     padding: 2,
   },
   HeaderContainer: {alignItems: 'center', paddingTop: 15, paddingBottom: 10},
   HeaderText: {
     fontSize: 18,
-    color: 'black',
+    color: '#000',
     fontWeight: '500',
   },
   CardLayout: {

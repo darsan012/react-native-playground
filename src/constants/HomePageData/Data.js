@@ -10,44 +10,49 @@ export const Headers = [
     iconsName: 'square-full',
   },
   {
-    screenName: 'Text',
+    screenName: 'Avatar',
+    title: 'Avatar',
+    iconsName: 'grin',
+  },
+  {
+    screenName: 'Box',
     title: 'Box',
     iconsName: 'box',
   },
 
   {
-    screenName: 'Text',
+    screenName: 'Alert',
     title: 'Alert',
     iconsName: 'eye',
   },
 
   {
-    screenName: 'Text',
+    screenName: 'FlatList',
     title: 'Flat List',
     iconsName: 'list',
   },
   {
-    screenName: 'Text',
+    screenName: 'Image',
     title: 'Image',
     iconsName: 'photo-video',
   },
   {
-    screenName: 'Text',
+    screenName: 'Toast',
     title: 'Toast',
     iconsName: 'photo-video',
   },
   {
-    screenName: 'Text',
+    screenName: 'Switch',
     title: 'Switch',
     iconsName: 'toggle-on',
   },
   {
-    screenName: 'Text',
+    screenName: 'Divider',
     title: 'Divider',
     iconsName: 'divide',
   },
   {
-    screenName: 'Text',
+    screenName: 'TextArea',
     title: 'Textarea',
     iconsName: 'envelope-open-text',
   },

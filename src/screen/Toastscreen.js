@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Dimensions, StyleSheet} from 'react-native';
 
 import Layout from '../components/Layout';
-const Textscreen = ({route}) => {
+const Toastscreen = ({route}) => {
   return (
     <Layout screenHeader={route.params.screenName}>
       <View>
@@ -15,4 +15,4 @@ const Textscreen = ({route}) => {
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
-export default Textscreen;
+export default Toastscreen;

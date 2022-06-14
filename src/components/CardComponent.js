@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 const CardComponent = ({item, clickHandler, iconsName}) => {
   return (
     <TouchableOpacity style={style.container} onPress={clickHandler}>
-      <Icon name={iconsName} size={20} color="white" />
+      <Icon name={iconsName} size={30} color="white" />
       <Text style={style.titleText}>{item.title}</Text>
     </TouchableOpacity>
   );
@@ -19,9 +19,9 @@ const style = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 5,
-    margin: 5,
+    margin: 8,
     borderRadius: 10,
-    backgroundColor: 'darkslateblue',
+    backgroundColor: '#2e8bd1',
     shadowOffset: {width: 1, height: 1},
     elevation: 3,
     shadowColor: '#fff',
