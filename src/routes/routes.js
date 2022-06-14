@@ -3,7 +3,6 @@ import Buttonscreen from '../screen/Buttonscreen';
 import Textscreen from '../screen/Textscreen';
 import Alertscreen from '../screen/Alertscreen';
 import Avatarscreen from '../screen/Avatarscreen';
-import Boxscreen from '../screen/Boxscreen';
 import Dividerscreen from '../screen/Dividerscreen';
 import Flatscreen from '../screen/FlatListscreen';
 import Imagescreen from '../screen/Imagescreen';
@@ -25,11 +24,6 @@ const screens = [
   {
     name: 'Alert',
     component: Alertscreen,
-    showHeader: false,
-  },
-  {
-    name: 'Box',
-    component: Boxscreen,
     showHeader: false,
   },
   {

@@ -26,13 +26,13 @@ const Avatarscreen = ({route}) => {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
     padding: 15,
     margin: 8,
+    flexWrap: 'wrap',
   },
   imageContainer: {
-    backgroundColor: 'rgb(243,243,243)',
-    width: 'auto',
     borderWidth: 1,
     borderColor: '#eee',
     padding: 15,

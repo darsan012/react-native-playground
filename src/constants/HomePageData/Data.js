@@ -15,12 +15,6 @@ export const Headers = [
     iconsName: 'grin',
   },
   {
-    screenName: 'Box',
-    title: 'Box',
-    iconsName: 'box',
-  },
-
-  {
     screenName: 'Alert',
     title: 'Alert',
     iconsName: 'eye',
