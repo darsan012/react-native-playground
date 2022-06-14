@@ -1,12 +1,22 @@
 import React from 'react';
-import {View, Text, Dimensions, StyleSheet} from 'react-native';
+import {View, Text, Dimensions, StyleSheet, FlatList} from 'react-native';
+import ListItem from '../components/Listitem';
 
 import Layout from '../components/Layout';
 const Flatscreen = ({route}) => {
+  const items = [
+    {text: 'Milk'},
+    {text: 'Juice'},
+    {text: 'Bread'},
+    {text: 'Coke'},
+  ];
   return (
     <Layout screenHeader={route.params.screenName}>
       <View>
-        <Text>Hello</Text>
+        <FlatList
+          data={items}
+          renderItem={({item}) => <ListItem item={item} />}
+        />
       </View>
     </Layout>
   );
