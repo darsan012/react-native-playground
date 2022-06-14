@@ -49,9 +49,9 @@ const style = StyleSheet.create({
     height: height,
     width: width,
     backgroundColor: 'rgb(188,227,227)',
-    padding: 8,
+    padding: 5,
   },
-  HeaderContainer: {alignItems: 'center', paddingTop: 50, paddingBottom: 60},
+  HeaderContainer: {alignItems: 'center', paddingTop: 15, paddingBottom: 10},
   HeaderText: {
     fontSize: 16,
     color: 'black',

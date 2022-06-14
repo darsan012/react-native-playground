@@ -14,8 +14,8 @@ const CardComponent = ({item, clickHandler, iconsName}) => {
 
 const style = StyleSheet.create({
   container: {
-    height: 120,
-    width: 150,
+    height: 125,
+    width: 160,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 5,
