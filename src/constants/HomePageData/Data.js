@@ -41,8 +41,8 @@ export const Headers = [
     iconsName: 'toggle-on',
   },
   {
-    screenName: 'Divider',
-    title: 'Divider',
+    screenName: 'Modal',
+    title: 'Modal',
     iconsName: 'divide',
   },
   {

@@ -3,7 +3,7 @@ import Buttonscreen from '../screen/Buttonscreen';
 import Textscreen from '../screen/Textscreen';
 import Alertscreen from '../screen/Alertscreen';
 import Avatarscreen from '../screen/Avatarscreen';
-import Dividerscreen from '../screen/Dividerscreen';
+import Modalscreen from '../screen/Modalscreen';
 import Flatscreen from '../screen/FlatListscreen';
 import Imagescreen from '../screen/Imagescreen';
 import Switchscreen from '../screen/Switchscreen';
@@ -32,8 +32,8 @@ const screens = [
     showHeader: false,
   },
   {
-    name: 'Divider',
-    component: Dividerscreen,
+    name: 'Modal',
+    component: Modalscreen,
     showHeader: false,
   },
   {

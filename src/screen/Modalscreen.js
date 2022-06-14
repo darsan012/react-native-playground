@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Alert, Modal, StyleSheet, Text, Pressable, View} from 'react-native';
 
 import Layout from '../components/Layout';
-const Switchscreen = ({route}) => {
+const Modalscreen = ({route}) => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <Layout screenHeader={route.params.screenName}>
@@ -79,4 +79,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Switchscreen;
+export default Modalscreen;
