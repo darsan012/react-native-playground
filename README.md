@@ -3,6 +3,10 @@
 This is a react native practice application.
 This project showcase different components used in react native applications.
 
+## This project was created by using
+
+    react-native init dumplingapp
+
 ## Packages Used
 
 ```
